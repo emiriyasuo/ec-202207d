@@ -165,8 +165,36 @@
       "tel": "090-0000-0000",
       "pass": "11111111",
       "id": 3
+    },
+    {
+      "name": "yasuo",
+      "mail": "yao@gmail.com",
+      "zip": "132-0035",
+      "address": "東京都江戸川区平井",
+      "tel": "090-0000-0000",
+      "pass": "11111111",
+      "id": 4
+    },
+    {
+      "name": "yasuo",
+      "mail": "yas@gmail.com",
+      "zip": "132-0035",
+      "address": "東京都江戸川区平井",
+      "tel": "090-0000-0000",
+      "pass": "11111111",
+      "id": 5
     }
   ],
-  "cartItems": [],
+  "cartItems": [
+    {
+      "img": "/img/2.jpg",
+      "name": "とんこつラーメン",
+      "price": 800,
+      "quantity": 1,
+      "options": [],
+      "subtotal": 800,
+      "id": 1
+    }
+  ],
   "payStatus": []
 }

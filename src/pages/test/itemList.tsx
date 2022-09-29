@@ -29,18 +29,18 @@ function Page() {
   // 並び替えのためのソート、ステイト
   // const nara = [data];
 
-  // const Yasui =
-  //   data.sort((a: any, b: any) => {
-  //   return a.price < b.price ? -1 : 1;
-  // })
+//   const Yasui =
+//     data.sort((a: any, b: any) => {
+//     return a.price < b.price ? -1 : 1;
+//   })
 
-  // const Takai =
-  // data.sort((a: any, b: any) => {
-  //   return a.price > b.price ? -1 : 1;
-  // })
+//   const Takai =
+//   data.sort((a: any, b: any) => {
+//     return a.price > b.price ? -1 : 1;
+//   })
 
-  // const [yasui,setYasui] =  useState(Yasui);
-  // const [takai,setTakai] = useState(Takai);
+//   const [yasui,setYasui] =  useState(Yasui);
+//   const [takai,setTakai] = useState(Takai);
 
   const handleClick = (e: any) => {
     const result = data.filter((item: any) => {
@@ -61,6 +61,11 @@ function Page() {
       setGaitouDisplay('block');
     }
   };
+
+  // const selected = document.getElementById("change_js");
+  //   selected.onchange = function() {
+  //       window.location.href = selected.value;
+  //   };
 
   return (
     <>
@@ -90,9 +95,12 @@ function Page() {
 
 
 {/* 並び替えのプルダウンフォーム */}
-<select name="example">
-<option onChange={(e) => setYasui(e)} >価格の低い順</option>
-<option  onChange={(e) => setTakai(e)}>価格の高い順</option>
+{/* <select OnChange="location.href=value;"> */}
+<select id="change_js">
+{/* <option onChange={(e) => setYasui(e)} >価格の低い順</option>
+<option  onChange={(e) => setTakai(e)}>価格の高い順</option> */}
+<option value="localhost:3000/test/yasui" ></option><Link href={`http://localhost:3000/test/yasui`}>価格の低い順</Link>
+<option value="localhost:3000/test/takai">価格の高い順</option>
 </select>
                   <form
                     method="post"
