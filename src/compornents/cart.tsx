@@ -15,6 +15,7 @@ function CartPage() {
   const { mutate } = useSWRConfig();
   const { data, error } = useSWR(
     'http://localhost:8000/cartItems',
+    
     fetcher
   );
 
